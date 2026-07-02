@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/ABS/PATH/TO/self-improvement/scripts/codex-hook-user-prompt-submit.js"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/ABS/PATH/TO/self-improvement/scripts/codex-hook-stop.js"
+          }
+        ]
+      }
+    ]
+  }
+}

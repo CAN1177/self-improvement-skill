@@ -1,0 +1,49 @@
+{
+  "name": "self-improvement-skill",
+  "version": "0.1.1",
+  "description": "CLI and skill for recording agent skill corrections into evidence-backed learnings",
+  "license": "MIT",
+  "homepage": "https://github.com/CAN1177/self-improvement-skill#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CAN1177/self-improvement-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CAN1177/self-improvement-skill/issues"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "hooks",
+    "self-improvement",
+    "skills"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "self-improvement-skill": "bin/cli.js",
+    "skill-self-improvement": "bin/cli.js"
+  },
+  "files": [
+    "HOOKS_INSTALL.md",
+    "README.md",
+    "README.zh.md",
+    "SKILL.md",
+    "CLI.md",
+    "LICENSE",
+    "bin/",
+    "integrations/",
+    "references/",
+    "scripts/"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "install:team": "node scripts/install-team-skill.js",
+    "install:claude-hooks": "node scripts/install-claude-hooks.js",
+    "install:codex-hooks": "node scripts/install-codex-hooks.js",
+    "doctor": "node bin/cli.js doctor",
+    "uninstall:team": "node bin/cli.js uninstall"
+  }
+}
